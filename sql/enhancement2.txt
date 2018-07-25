@@ -1,0 +1,47 @@
+/* 
+ This changes the words Nylon Rope to Climbing Rope
+ */
+
+UPDATE inventory
+SET invDescription=REPLACE(invDescription, 'nylon rope', 'climbing rope')
+WHERE 1;
+UPDATE inventory
+SET invName=REPLACE(invName, 'Nylon Rope', 'Climbing Rope')
+WHERE 1
+
+/* 
+ This makes the clients table and inserts Tony Starks into it
+ */
+CREATE TABLE client 
+(
+id      INTEGER PRIMARY KEY,
+name		TEXT;
+email  		TEXT;
+username 	TEXT;
+password	TEXT);
+
+
+
+INSERT INTO client VALUES (3,"Tony, Starks", "tony@starkent.com", “Iam1ronM@n", "I am the real Ironman")
+
+
+
+/* 
+ inner join
+ */
+
+SELECT inventory.invName, categories.categoryName
+FROM categories
+INNER JOIN inventory ON
+inventory.categoryId = categories.categoryId
+WHERE categories.categoryId = 3
+
+/* 
+ deleted Koenigsegg CCX Car
+ */
+
+DELETE
+FROM
+  inventory
+WHERE
+  invName = 'Koenigsegg CCX Car'

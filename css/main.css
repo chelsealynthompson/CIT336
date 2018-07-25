@@ -1,0 +1,350 @@
+html{
+ box-sizing: border-box;
+}
+
+*, *:before, *:after{
+ box-sizing: inherit;
+}
+
+
+
+
+body {
+   background-image: url("../images/site/background.jpg");
+   background-position: center center;   
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   line-height: 32px;
+   font-family: 'Open Sans Condensed',sans-serif;
+   color: black;
+}
+main {
+   max-width: 90%;
+   min-width: 100px;
+   background-color: white;
+   position: absolute;
+   right: auto;
+   left: auto;
+   padding: 20px;
+}
+
+header, nav, main, footer { 
+    max-width: fill;
+}
+
+
+/*-----header------*/
+header {
+    background-color: white; 
+    margin: 1rem auto;
+    padding: .25rem;  
+    max-width: inherit;
+    height: 8em;
+    
+}
+
+header img {
+    width: 12rem;
+    height: 5rem;
+}
+a img {
+    height: 1rem;
+    width: 1.2rem;
+    margin-right: .5rem;
+}
+.myaccount {
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: normal;
+   color: black;
+}
+.accountinfo img {
+   height: 50px;
+    width: 70px;
+    margin-top: 20px;
+    position: absolute;
+       right: 100%;
+    
+}
+.accountinfo a {
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: normal;
+   color: black;
+   text-align: right;
+   position: absolute;
+       right: 10%;
+}
+.accountinfo a:hover { 
+    color: #990033;
+}
+
+a {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 30px;
+}
+.welcome {  
+   font-weight: bold;
+   font-size: 1.5em;
+   text-align: center;
+   position: absolute;
+       right: 80px;
+      margin-top: 20px;
+}
+.logout {
+   position: absolute;
+   right: 10%;
+       font-size: 1em;
+       margin-top: 20px;
+}
+
+/*-----navigation------*/
+current ul {
+    list-style-type: none;
+    margin: .2%;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav {
+    font-size: 1em;
+    margin-top: 20%;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    background-color: #990033;
+    justify-content: space-around;
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    border:none;
+    color: white;
+    padding: .5em;
+}
+nav ul li.active a {   
+    background-color: white;
+    color: #990033;
+}
+nav ul li a:hover {
+    background-color: white; 
+    color: #990033;
+}
+nav ul.hide {
+    display:none;
+}
+.current{
+    display: flex;
+    flex: 1 1 100%;;
+    flex-direction: column;
+    background-color: white;
+    list-style-type:disc;
+    color: #587d83;
+}
+.current.figure{
+    align-self:center;
+}
+
+/*-----products------*/
+#prod-display{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+}
+#prod-display li{
+ margin-bottom: .5em;
+ border: 1px #ccc solid;
+ list-style-type: none;
+ flex: 1 1 auto;
+}
+#prod-display li img{
+ width: 100%;
+ height: 300px;
+}
+
+.prodinfolist {
+   font-size: 1em;
+   list-style-type: none;
+   line-height: 1.5em;
+}
+#price {
+   font-size: 5em;
+   color: red;
+}
+.prodinfo img {
+   width: 100%;
+}
+/*-----content------*/
+main {
+    margin: .2rem;
+}
+#homepageitem {
+    width: 100%;
+    padding-bottom: 10px;
+    height: 500px;
+}
+.description{
+   background: rgba(255,255,255, 0.3);
+   padding: 5px;
+    position: relative;
+    left: 40%;
+    top: -250px;
+    width: 60%;
+    font-size: .1rem;
+    text-align: left;
+    line-height:20px;
+}
+
+#featuredimage img {
+   width: 100%;
+   height: 100%;
+   padding-bottom: 20px;
+}
+
+.description h1 {
+   font-size: 1rem;
+   line-height: 20px;
+   text-align: center;
+}
+
+.description span {
+    float: right;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+
+a img {
+    height: 30px;
+    width: 80px;
+}
+
+h1 {
+   font-size: 200%;
+   line-height: 1.5em;
+}
+section.featured {
+    float: right;
+    font-size: 1.3rem;
+}
+section.food {
+    font-size: 1.3rem;
+    text-align:center;
+    padding-top: 200px;
+}
+
+td img{
+    width:100px;
+}
+#welcome ul li {
+    list-style-type: none;
+    color: #990033;
+}
+#welcome h2 {
+    color: #990033;
+}
+/*-----footer------*/
+footer {
+    flex: 1 1 100%;
+    flex-flow:row wrap;
+    text-align: center;
+    background-color: white;
+    color: black;
+    
+}
+#welcome {
+    height:190px;
+}
+/*----Login Form------*/
+.login h2 {
+   font-size: 3em;
+}
+.login p {
+   font-size: 1em;
+}
+.registerbtn {
+   font-size: 3em;
+}
+
+#clientRegister span {
+   font-size: 2em;
+}
+.register h2 {
+   font-size: 3em;
+}
+.login span {
+  font-size: 2em; 
+}
+#registeredPassword, #registeredEmail, #clientFirstname, #clientLastname, #clientEmail, #clientPassword {
+   font-size: 2em;
+}
+.loginbtn {
+   font-size: 7em;
+}
+.create {
+  font-size: 7em;
+}
+p.createanaccount {
+   font-size: 50px;
+}
+a:hover {
+   color: red;
+}
+a:hover p {
+   color: red;
+}
+/*--Add Catigory Form--*/
+#addcat {
+   font-size: 30px;
+}
+/*---Add Product---*/
+#clientRegister input, #invDescription {
+   font-size: 30px;
+}
+.notice {
+   color: red;
+   font-weight: bold;
+   font-size: 30px;
+}
+
+table {
+   width: 100%; 
+}
+table a {
+   font-size: 15px;
+}
+th, td {
+   font-size: 15px;
+   width: 1%;
+   text-align: left;
+   border: 1px solid blue;
+   padding: 10px;
+}
+
+/*--Message--*/
+.message{
+  font-size: 2em;
+  color: red;
+  font-weight: bold;
+}
+
+/*--Client Update Page--*/
+
+fieldset {
+   border: 5px solid red;
+}
+
+
+
+.admin, .login {
+   width: 100%;
+}
+
+
